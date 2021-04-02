@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.514);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 
 .modal-box {
@@ -57,5 +57,6 @@ form {
   padding: 1% 5%;
 }
 
-h1{
+select {
+  margin-right: 10px;
 }
