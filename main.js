@@ -7,4 +7,8 @@ function handleClick(event) {
 }
 
 $addEntryButton.addEventListener('click', handleClick);
-$submitButton.addEventListener('click', handleClick);
+$submitButton.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  $modalContainer.classList.add('hidden');
+}

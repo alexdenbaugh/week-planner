@@ -60,3 +60,11 @@ form {
 select {
   margin-right: 10px;
 }
+
+.column-7 {
+  width: calc(100% / 7);
+}
+
+.days-of-week {
+  justify-content: center;
+}
