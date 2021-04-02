@@ -45,6 +45,7 @@ form {
 .row {
   display: flex;
   width: 100%;
+  margin: 20px;
 }
 
 .row.page-title,
@@ -63,8 +64,18 @@ select {
 
 .column-7 {
   width: calc(100% / 7);
+  text-align: center;
 }
 
 .days-of-week {
   justify-content: center;
+}
+
+th {
+  color: white;
+  background-color: black;
+}
+
+tr:nth-child(2n + 1) {
+background-color: lightgray;
 }
