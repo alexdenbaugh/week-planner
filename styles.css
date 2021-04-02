@@ -13,7 +13,6 @@
 .modal-box {
   background-color: white;
   width: 400px;
-  height: 200px;
   padding: 10px;
 }
 
@@ -24,10 +23,6 @@ form {
 
 .modal-header {
   justify-content: center;
-}
-
-.options {
-
 }
 
 .description {

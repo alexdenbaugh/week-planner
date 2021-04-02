@@ -1,5 +1,5 @@
-var data = {
-  entries: [],
-  editing: null,
-  nextEntryID: 1,
-}
+// var data = {
+//   entries: [],
+//   editing: null,
+//   nextEntryID: 1
+// };
