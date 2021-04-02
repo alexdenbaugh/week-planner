@@ -71,11 +71,40 @@ select {
   justify-content: center;
 }
 
+.grid {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.table-title {
+  justify-content: center;
+}
+
+table {
+  /* display: grid; */
+  flex-basis: 75%;
+  border: black thin solid;
+}
+
 th {
   color: white;
   background-color: black;
+  height: 20px;
+}
+
+.first-column-table {
+  width: 30%;
+}
+
+tr {
+  height: 20px;
+}
+
+th,
+td {
+  border: black thin solid;
 }
 
 tr:nth-child(2n + 1) {
-background-color: lightgray;
+  background-color: lightgray;
 }
