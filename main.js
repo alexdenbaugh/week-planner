@@ -31,7 +31,17 @@ function handleSubmit(event) {
 $addEntryForm.addEventListener('submit', handleSubmit);
 
 var $dOfWeek = document.querySelector('.days-of-week');
-$dOfWeek.addEventListener('click');
-function daySelector(event) {
+$dOfWeek.addEventListener('click', daySelector);
 
+function daySelector(event) {
+  var dayArray = []
+  var selectDay = event.target.getAttribute('data-day')
+
+  // for (var i = 0; i < data.entries.length; i++) {
+  //   data.entries[i].day
+  //   if (data.entries[i].day === selectDay) {
+  //     dayArray.push(data.entries[i].day)
+  //   }
+  // }
+  // console.log(data.entries[i].day)
 }
