@@ -103,3 +103,7 @@ td {
 tr:nth-child(2n + 1) {
   background-color: lightgray;
 }
+
+button {
+  background-color: rgb(31, 177, 177);
+}
