@@ -76,7 +76,6 @@ select {
 }
 
 table {
-  /* display: grid; */
   flex-basis: 75%;
   border: black thin solid;
 }
@@ -105,5 +104,9 @@ tr:nth-child(2n + 1) {
 }
 
 button {
-  background-color: rgb(31, 177, 177);
+  background-color: tomato;
+  border: black 0.15rem solid;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
 }
