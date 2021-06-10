@@ -4,7 +4,7 @@ var data = {
   nextEntryID: 1
 };
 
-var previousData = localStorage.getItem('data')
+var previousData = localStorage.getItem('data');
 if (previousData !== null) {
   data = JSON.parse(previousData);
 }
@@ -12,8 +12,7 @@ if (previousData !== null) {
 window.addEventListener('beforeunload', function () {
   var dataToSave = JSON.stringify(data);
   localStorage.setItem('data', dataToSave);
-})
-
+});
 
 var $addEntryButton = document.querySelector('.main-button');
 var $modalContainer = document.querySelector('.modal-container');
@@ -32,8 +31,6 @@ function handleSubmit(event) {
   object.dayOfWeek = $addEntryForm.elements.day.value;
   object.time = $addEntryForm.elements.time.value;
   object.description = $addEntryForm.elements.description.value;
-  // console.log('object', object);
-  // console.log($addEntryForm.elements);
   $modalContainer.classList.add('hidden');
   data.entries.unshift(object);
 
@@ -41,18 +38,17 @@ function handleSubmit(event) {
 
 $addEntryForm.addEventListener('submit', handleSubmit);
 
-var $dOfWeek = document.querySelector('.days-of-week');
-$dOfWeek.addEventListener('click', daySelector);
+// var $dOfWeek = document.querySelector('.days-of-week');
+// $dOfWeek.addEventListener('click', daySelector);
 
-function daySelector(event) {
-  var dayArray = []
-  var selectDay = event.target.getAttribute('data-day')
+// function daySelector(event) {
+//   var dayArray = []
+//   var selectDay = event.target.getAttribute('data-day')
 
-  for (var i = 0; i < data.entries.length; i++) {
-    data.entries[i].dayOfWeek
-    if (data.entries[i].dayOfWeek === selectDay) {
-      dayArray.push(data.entries[i].dayOfWeek)
-    }
-  }
-  console.log(data.entries.dayOfWeek)
-}
+//   for (var i = 0; i < data.entries.length; i++) {
+//     data.entries[i].dayOfWeek
+//     if (data.entries[i].dayOfWeek === selectDay) {
+//       dayArray.push(data.entries[i].dayOfWeek)
+//     }
+//   }
+// }
